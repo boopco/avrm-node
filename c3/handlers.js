@@ -42,3 +42,15 @@ module.exports={
     calc,
     post
 };
+
+
+1 ruta so get 1 so post
+eden file niza od studenti 
+na get da gi ispecahti site iminja i preziminja od studenti niza
+na post rutata preku post metodot da ispratam ime/prezime (student) i da se dopise vo fajlot
+1 otvori
+2 procitaj
+3 parse
+4 dodadi studen
+5 strinigfy 
+6 pratite nazad
