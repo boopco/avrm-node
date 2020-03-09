@@ -1,0 +1,50 @@
+<head>
+<link rel="stylesheet" href="/styles/main.css">
+<title>document</title>
+</head>
+
+
+<body>
+    {{>header}}
+<form method="post" action="studenti">
+  <label>
+    Ime:
+    <input type="text" name="ime">
+    </label>
+    <br><br>
+    <label>
+    Prezime:
+    <input type="text" name="prezime">
+  </label>
+  <br><br>
+  <label>
+      prosek:
+      <input type="number"  name="prosek"></label><br><br>
+  
+  <button type="submit" >submit</button>
+</form>
+<hr/>
+
+<table border="1" width="50%">
+<tr>
+   <th>Ime</th>
+   <th>Prezime</th>
+   <th>Prosek</th>
+   <th>Delete</th>
+</tr>
+
+    {{#each students}}
+    <tr >
+        <td>{{this.ime}} </td>
+        <td>{{this.prezime}} </td>
+        <td>{{this.prosek}} </td>
+        <td>
+            
+             <a href="/students/delete/{{@index}}">DELETE</a>
+        </td>
+    </tr>
+    {{/each}}
+</tr>
+</table>
+
+</body>
